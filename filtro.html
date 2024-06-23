@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtro</title>
+  <link rel="stylesheet" href="styles/filtro.css">
+  <script src="scripts.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="/imagenes/logos/Logo.png" alt="Logo">
+        </a>
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#">Lanzamientos</a></li>
+          <li><a href="#">Zapatillas</a></li>
+          <li><a href="#">Vestir</a></li>
+          <li><a href="#">Niños</a></li>
+        </ul>
+      </nav>
+      <div class="search-container">
+        <input type="text" class="search-box" placeholder="Buscar">
+      </div>
+      <div class="header-logos">
+        <img src="/imagenes/iconos/busqueda.svg" alt="Busqueda">
+        <a href="login.html">
+          <img src="/imagenes/iconos/user.svg" alt="User">
+        </a>
+        <a href="carrito.html">
+          <img src="/imagenes/iconos/carrito-de-compras2.svg" alt="Carrito de compras">
+        </a>
+        <a href="filtro.html">
+          <img src="/imagenes/iconos/filtrar.svg" alt="Filtro">
+        </a>
+      </div>
+      <div class="menu-icon" onclick="togglePopupMenu()">
+        <img src="/imagenes/iconos/menu.svg" alt="Menu Icon">
+      </div>
+    </header>
+    <div class="popup-menu" id="popupMenu">
+      <ul>
+        <li><a href="#">Buscar</a></li>
+        <li><a href="login.html">Usuario</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="filtro.html">Filtrar</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <aside class="filters">
+        <h2>FILTROS</h2>
+        <ul>
+          <a href="#">
+            <li>Modelos exclusivos</li>
+          </a>
+
+          <a href="#">
+            <li>Trajes</li>
+          </a>
+
+          <a href="#">
+            <li>Busos y sudaderas</li>
+          </a>
+
+          <a href="#">
+            <li>Air force</li>
+          </a>
+
+          <a href="#">
+            <li>Vestidos</li>
+          </a>
+        </ul>
+      </aside>
+      <section class="products">
+        <h2>PRODUCTOS</h2>
+        <div class="product">
+          <a href="/detalles.html">
+            <img src="imagenes/filtro1.png" alt="Conjunto Invierno">
+          </a>
+          <p>Conjunto Invierno $23</p>
+          <input type="number" name="quantity" value="1" min="1" max="50" step="1">
+          <a href="carrito.html">
+            <button class="add-to-cart">🛒</button>
+          </a>
+        </div>
+        <div class="product">
+          <img src="imagenes/filtro2.png" alt="Conjuntos Abrigo Nike">
+          <p>Conjuntos Abrigo Nike $23</p>
+          <input type="number" name="quantity" value="1" min="1" max="50" step="1">
+          <a href="carrito.html">
+            <button class="add-to-cart">🛒</button>
+          </a>
+        </div>
+        <div class="product">
+          <img src="imagenes/filtro3.png" alt="Zapatillas Blancas Nike">
+          <p>Zapatillas Blancas Nike $23</p>
+          <input type="number" name="quantity" value="1" min="1" max="50" step="1">
+          <a href="carrito.html">
+            <button class="add-to-cart">🛒</button>
+          </a>
+        </div>
+        <div class="product">
+          <img src="imagenes/filtro4.png" alt="Conjunto Deportivo">
+          <p>Conjunto Deportivo $23</p>
+          <input type="number" name="quantity" value="1" min="1" max="50" step="1">
+          <a href="carrito.html">
+            <button class="add-to-cart">🛒</button>
+          </a>
+        </div>
+        <div class="product">
+          <img src="imagenes/filtro5.png" alt="Zapatillas verdes">
+          <p>Zapatillas verdes $23</p>
+          <input type="number" name="quantity" value="1" min="1" max="50" step="1">
+          <a href="carrito.html">
+            <button class="add-to-cart">🛒</button>
+          </a>
+        </div>
+        <div class="product">
+          <img src="imagenes/filtro6.png" alt="Jeans Levi Verano">
+          <p>Jeans Levi Verano $23</p>
+          <input type="number" name="quantity" value="1" min="1" max="50" step="1">
+          <a href="carrito.html">
+            <button class="add-to-cart">🛒</button>
+          </a>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>SÍGUENOS EN NUESTRAS REDES SOCIALES</p>
+      <div class="social-media">
+        <a href="#"><img src="imagenes/iconos/instagram-stroke-rounded.svg" alt="Instagram"></a>
+        <a href="#"><img src="imagenes/iconos/facebook-01-stroke-rounded.svg" alt="Facebook"></a>
+        <a href="#"><img src="imagenes/iconos/new-twitter-rectangle-stroke-rounded.svg" alt="Twitter"></a>
+        <a href="#"><img src="imagenes/iconos/youtube-stroke-rounded.svg" alt="YouTube"></a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

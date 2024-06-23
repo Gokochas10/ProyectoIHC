@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalles producto</title>
+  <link rel="stylesheet" href="styles/detalles.css">
+  <script src="scripts.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="/imagenes/logos/Logo.png" alt="Logo">
+        </a>
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#">Lanzamientos</a></li>
+          <li><a href="#">Zapatillas</a></li>
+          <li><a href="#">Vestir</a></li>
+          <li><a href="#">Niños</a></li>
+        </ul>
+      </nav>
+      <div class="search-container">
+        <input type="text" class="search-box" placeholder="Buscar">
+      </div>
+      <div class="header-logos">
+        <img src="/imagenes/iconos/busqueda.svg" alt="Busqueda">
+        <a href="login.html">
+          <img src="/imagenes/iconos/user.svg" alt="User">
+        </a>
+        <a href="carrito.html">
+          <img src="/imagenes/iconos/carrito-de-compras2.svg" alt="Carrito de compras">
+        </a>
+        <a href="filtro.html">
+          <img src="/imagenes/iconos/filtrar.svg" alt="Filtro">
+        </a>
+      </div>
+      <div class="menu-icon" onclick="togglePopupMenu()">
+        <img src="/imagenes/iconos/menu.svg" alt="Menu Icon">
+      </div>
+    </header>
+    <div class="popup-menu" id="popupMenu">
+      <ul>
+        <li><a href="#">Buscar</a></li>
+        <li><a href="login.html">Usuario</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="filtro.html">Filtrar</a></li>
+      </ul>
+    </div>
+    <div class="carrito-de-compra">
+      <h1>Detalles del producto</h1>
+      <div class="producto">
+        <img src="/imagenes/detallles.png" alt="Conjunto Invierno">
+        <div class="descripcion">
+          <h2>Conjunto Invierno</h2>
+          <div class="descuento-precio">
+            <span class="descuento">-1%</span>
+            <span class="precio">$22.77</span>
+          </div>
+          <span><del>Precio Normal: $23</del></span>
+          <p>Prepárate para el frío con nuestro conjunto de invierno: una chaqueta de plumón ligera y elegante junto con
+            unos pantalones térmicos para mantenerte cálido y con estilo en los días más helados.</p>
+          <p><strong>Cant:</strong>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" max="50" step="1">
+          </p>
+
+          <button class="comprar-ahora">Comprar Ahora</button>
+
+          <a class="boton" href="carrito.html">
+            <button class="agregar-carrito">Agregar al Carrito</button>
+          </a>
+
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>SÍGUENOS EN NUESTRAS REDES SOCIALES</p>
+      <div class="social-media">
+        <a href="#"><img src="imagenes/iconos/instagram-stroke-rounded.svg" alt="Instagram"></a>
+        <a href="#"><img src="imagenes/iconos/facebook-01-stroke-rounded.svg" alt="Facebook"></a>
+        <a href="#"><img src="imagenes/iconos/new-twitter-rectangle-stroke-rounded.svg" alt="Twitter"></a>
+        <a href="#"><img src="imagenes/iconos/youtube-stroke-rounded.svg" alt="YouTube"></a>
+      </div>
+    </footer>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

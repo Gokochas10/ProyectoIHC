@@ -1,0 +1,179 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: url(/imagenes/fondo2.webp) no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.contenedor {
+  position: relative;
+  width: 400px;
+  max-width: 100%;
+  border: 2px solid rgba(150, 109, 126, 1);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contenedor h2 {
+  font-size: 2.3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.input-contenedor {
+  position: relative;
+  margin: 30px 0;
+  width: 300px;
+  border-bottom: 2px solid #f4e1d2;
+  color: #fff;
+}
+
+.input-contenedor label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.6s;
+  font-weight: bold;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: 2px;
+}
+
+.input-contenedor input {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: -35px 0 5px;
+  color: #fff;
+}
+
+.input-contenedor .i {
+  position: absolute;
+  color: #fff;
+  font-size: 1.6rem;
+  top: 19px;
+  right: 8px;
+}
+
+.olvidar {
+  margin: -15px 0 15px;
+  font-size: 0.9em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.olvidar label input {
+  margin: 3px;
+}
+
+.olvidar label a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 0.9em;
+}
+
+.olvidar label a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  height: 45px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: rgba(150, 109, 126, 1);
+  color: #fff;
+}
+
+.registrar {
+  font-size: 0.8rem;
+  color: #fff;
+  text-align: center;
+  margin: 20px 0 10px;
+}
+
+.registrar p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.registrar p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    height: auto;
+    padding: 20px;
+  }
+  .input-contenedor {
+    width: 100%;
+  }
+  button {
+    height: 40px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor {
+    width: 90%;
+    height: auto;
+  }
+  .contenedor h2 {
+    font-size: 1.8rem;
+  }
+  .input-contenedor label {
+    font-size: 0.9rem;
+  }
+  .input-contenedor .i {
+    font-size: 1.2rem;
+  }
+  button {
+    height: 35px;
+    font-size: 0.8rem;
+  }
+  .registrar {
+    font-size: 0.7rem;
+  }
+}

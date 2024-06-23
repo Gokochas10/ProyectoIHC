@@ -1,0 +1,502 @@
+/* Estilo general para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px ;
+  padding-bottom: 0;
+}
+
+/* Estilo para el encabezado */
+header {
+  background-color: rgba(150, 109, 126, 1);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+/* Posicionamiento del logo */
+header .logo img {
+  height: 70px;
+  max-height: 100%;
+}
+
+/* Estilo para la navegación */
+nav {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#nav-bar a {
+  font-size: 20px;
+  font-weight: bold;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo del cuadro de búsqueda */
+.search-box {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  width: 150px;
+  height: 10px;
+  background-color: #ffffff;
+  color: #777777;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-box::placeholder {
+  color: #777777;
+}
+
+/* Estilo para los logos del header */
+.header-logos {
+  display: flex;
+  align-items: center;
+}
+
+.header-logos img {
+  height: 30px;
+  margin-left: 10px;
+}
+
+/* Estilo para el ícono del menú */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon img {
+  height: 30px;
+}
+
+/* Estilo para el menú emergente */
+.popup-menu {
+  display: none;
+  position: relative;
+  background-color: #f4e1d2;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.popup-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.popup-menu ul li {
+  margin: 10px 0;
+}
+
+.popup-menu ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.popup-menu ul li a:hover {
+  text-decoration: underline rgba(150, 109, 126, 1);
+}
+
+/* Estilo para la sección del carrusel */
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.carousel-inner {
+  display: flex;
+  overflow: hidden;
+  height: auto;
+}
+
+.carousel-item {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+  height: 350px;
+}
+
+.carousel-item img {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  font-size: 24px;
+}
+
+/* Estilo para la sección de marcas */
+.brands {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.brands .brand-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brands .brand-logos img {
+  margin: 0 15px;
+}
+
+.nike {
+  width: 200px;
+  height: 150px;
+}
+
+.adidas {
+  width: 150px;
+  height: 100px;
+}
+
+.gucci {
+  width: 200px;
+  height: 150px;
+}
+
+.zara {
+  width: 150px;
+}
+
+.puma {
+  width: 150px;
+}
+
+.thenorthface {
+  width: 150px;
+}
+
+/* Estilo para la sección de categorías */
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3,250px);
+
+  grid-template-areas: 
+  "modelos modelos trajes vestidos"
+  "busos air zapatillas vestidos"
+  "busos air zapatillas vestidos";
+  gap: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.categorias #c1 {
+  grid-area : modelos;
+}
+
+/* Aqui empieza*/
+:root {
+  --transition-duration: 0.3s;
+  --transition-delay: 0.2s;
+}
+
+.categorias .category a {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+  text-decoration: none;
+}
+
+.categorias .category a .border {
+  position: absolute;
+  left: 0;
+  background: currentColor;
+  transition: transform var(--transition-duration) ease-in-out;
+}
+
+.categorias .category a .border-top,
+.categorias .category a .border-bottom {
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+}
+
+.categorias .category a .border-left,
+.categorias .category a .border-right {
+  width: 1px;
+  height: 100%;
+  transform: scaleY(0);
+}
+
+.categorias .category a .border-top,
+.categorias .category a .border-left,
+.categorias .category a .border-right {
+  top: 0;
+}
+
+.categorias .category a .border-bottom {
+  bottom: 0;
+  transform-origin: bottom right;
+}
+
+.categorias .category a .border-top {
+  transform-origin: top left;
+}
+
+.categorias .category a .border-left {
+  transform-origin: bottom left;
+}
+
+.categorias .category a .border-right {
+  left: auto;
+  right: 0;
+  transform-origin: top right;
+}
+
+.categorias .category a:hover .border-top,
+.categorias .category a:hover .border-bottom {
+  transform: scaleX(1);
+}
+
+.categorias .category a:hover .border-left,
+.categorias .category a:hover .border-right {
+  transform: scaleY(1);
+}
+
+.categorias .category a:hover .border-right {
+  transition-delay: var(--transition-delay);
+}
+
+.categorias .category a:hover .border-bottom {
+  transition-delay: calc(var(--transition-delay) * 2);
+}
+
+.categorias .category a:hover .border-left {
+  transition-delay: calc(var(--transition-delay) * 3);
+}
+/* Aqui empieza*/
+
+.categorias #c2 {
+  grid-area : trajes;
+}
+
+.categorias #c3 {
+  grid-area : busos;
+}
+
+.categorias #c4 {
+  grid-area : air;
+}
+
+.categorias #c5 {
+  display: flex;
+  justify-content: first baseline;
+  flex-direction: column;
+  align-items: center;
+  grid-area : vestidos;
+}
+
+.categorias #c6 {
+  grid-area : zapatillas;
+}
+
+.categorias #c5 img {
+  width: 100%;
+  height: 87%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.categorias .category {
+  text-align: center;
+  border-radius: 10px;
+}
+
+  .categorias .category img {
+    width: 95%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+  }
+
+
+  img:hover {
+    /* Aumenta el tamaño de la imagen al pasar el cursor */
+    transform: scale(1.07); 
+    transition: transform 0.3s ease-in-out;
+  }
+
+/* Estilo para el pie de página */
+footer {
+  background-color: rgba(150, 109, 126, 1);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  height: 100px;
+  width: auto;
+  border-radius: 50% 50% 0 0 / 100px 100px ;
+}
+
+footer .social-media a img {
+  width: 50px;
+  margin: 0 10px;
+}
+
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: row;
+    align-items: center;
+  }
+  .search-box {
+    display: none;
+  }
+
+ 
+  .categorias {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 300px);
+    grid-template-areas: 
+    "vestidos modelos"
+    "vestidos trajes"
+    "vestidos busos"
+    "vestidos air"
+    "vestidos zapatillas";
+    gap: 10px;
+    padding: 0px;
+    border-radius: 10px;
+  }
+
+
+  .categorias #c5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .categorias #c5 img {
+    height: 100%;
+    width: 100%;
+  }
+
+  #c1, #c2, #c3, #c4, #c6 {
+    height: 70%;
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-logos {
+    display: none;
+  }
+
+  .carousel-item {
+    height: 200px;
+  }
+
+  .carousel-item img{
+    height: auto;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .categorias {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel-item img {
+    height: auto;
+  }
+}
