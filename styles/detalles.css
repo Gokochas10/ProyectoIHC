@@ -1,4 +1,3 @@
-/* Estilo general para el cuerpo de la página */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,7 +5,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Contenedor principal */
 .container {
   width: 100%;
   max-width: 1400px;
@@ -15,7 +13,6 @@ body {
   padding-bottom: 0;
 }
 
-/* Estilo para el encabezado */
 header {
   background-color: rgba(150, 109, 126, 1);
   color: white;
@@ -26,13 +23,11 @@ header {
   border-radius: 10px;
 }
 
-/* Posicionamiento del logo */
 header .logo img {
   height: 70px;
   max-height: 100%;
 }
 
-/* Estilo para la navegación */
 nav {
   display: flex;
   flex: 1;
@@ -71,7 +66,6 @@ nav ul li a:hover {
   align-items: center;
 }
 
-/* Estilo del cuadro de búsqueda */
 .search-box {
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -91,7 +85,6 @@ nav ul li a:hover {
   color: #777777;
 }
 
-/* Estilo para los logos del header */
 .header-logos {
   display: flex;
   align-items: center;
@@ -102,7 +95,6 @@ nav ul li a:hover {
   margin-left: 10px;
 }
 
-/* Estilo para el ícono del menú */
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -111,7 +103,7 @@ nav ul li a:hover {
 .menu-icon img {
   height: 30px;
 }
-/* Estilo para el menú emergente */
+
 .popup-menu {
   display: none;
   position: relative;
@@ -139,7 +131,7 @@ nav ul li a:hover {
 .popup-menu ul li a:hover {
   text-decoration: underline rgba(150, 109, 126, 1);
 }
-/*Precio*/
+
 .descuento {
   color: rgba(150, 109, 126, 1);
   font-size: 24px;
@@ -151,7 +143,6 @@ nav ul li a:hover {
   font-size: 40px;
 }
 
-/* Estilo para el pie de página */
 footer {
   background-color: rgba(150, 109, 126, 1);
   color: white;
@@ -167,7 +158,6 @@ footer .social-media a img {
   margin: 0 10px;
 }
 
-/* Estilos para el carrito de compras */
 .carrito-de-compra {
   margin: 20px 0;
 }
@@ -242,13 +232,6 @@ a {
   color: rgb(95, 55, 72);
 }
 
-/* 
-rgba(150, 109, 126, 1)
-#f4e1d2
-rgb(95, 55, 72)
-*/
-
-/* Media Queries para pantallas pequeñas */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -303,7 +286,6 @@ rgb(95, 55, 72)
   }
 }
 
-/* Media Queries para pantallas mas pequeñas */
 @media (max-width: 240px) {
   .menu-icon {
     display: none;

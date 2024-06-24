@@ -1,4 +1,3 @@
-/* Estilo general para el cuerpo de la página */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,7 +5,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Contenedor principal */
 .container {
   width: 100%;
   max-width: 1400px;
@@ -15,7 +13,6 @@ body {
   padding-bottom: 0;
 }
 
-/* Estilo para el encabezado */
 header {
   background-color: rgba(150, 109, 126, 1);
   color: white;
@@ -26,13 +23,11 @@ header {
   border-radius: 10px;
 }
 
-/* Posicionamiento del logo */
 header .logo img {
   height: 70px;
   max-height: 100%;
 }
 
-/* Estilo para la navegación */
 nav {
   display: flex;
   flex: 1;
@@ -71,7 +66,6 @@ nav ul li a:hover {
   align-items: center;
 }
 
-/* Estilo del cuadro de búsqueda */
 .search-box {
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -91,7 +85,6 @@ nav ul li a:hover {
   color: #777777;
 }
 
-/* Estilo para los logos del header */
 .header-logos {
   display: flex;
   align-items: center;
@@ -102,7 +95,6 @@ nav ul li a:hover {
   margin-left: 10px;
 }
 
-/* Estilo para el ícono del menú */
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -112,7 +104,6 @@ nav ul li a:hover {
   height: 30px;
 }
 
-/* Estilo para el menú emergente */
 .popup-menu {
   display: none;
   position: relative;
@@ -141,7 +132,6 @@ nav ul li a:hover {
   text-decoration: underline rgba(150, 109, 126, 1);
 }
 
-/* Estilo para la sección del carrusel */
 .carousel {
   position: relative;
   width: 100%;
@@ -190,7 +180,6 @@ nav ul li a:hover {
   font-size: 24px;
 }
 
-/* Estilo para la sección de marcas */
 .brands {
   text-align: center;
   padding: 20px;
@@ -235,7 +224,6 @@ nav ul li a:hover {
   width: 150px;
 }
 
-/* Estilo para la sección de categorías */
 .categorias {
   display: grid;
   grid-template-columns: repeat(4,1fr);
@@ -254,7 +242,6 @@ nav ul li a:hover {
   grid-area : modelos;
 }
 
-/* Aqui empieza*/
 :root {
   --transition-duration: 0.3s;
   --transition-delay: 0.2s;
@@ -338,7 +325,6 @@ nav ul li a:hover {
 .categorias .category a:hover .border-left {
   transition-delay: calc(var(--transition-delay) * 3);
 }
-/* Aqui empieza*/
 
 .categorias #c2 {
   grid-area : trajes;
@@ -394,12 +380,10 @@ nav ul li a:hover {
 
 
   img:hover {
-    /* Aumenta el tamaño de la imagen al pasar el cursor */
     transform: scale(1.07); 
     transition: transform 0.3s ease-in-out;
   }
 
-/* Estilo para el pie de página */
 footer {
   background-color: rgba(150, 109, 126, 1);
   color: white;
@@ -416,8 +400,6 @@ footer .social-media a img {
   margin: 0 10px;
 }
 
-
-/* Media Queries para pantallas pequeñas */
 @media (max-width: 768px) {
 
   header {
